@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(221,174,238);
+    background: radial-gradient(circle, rgba(221,174,238,1) 0%, rgba(131,147,246,1) 96%);
+    font-family: Cambria;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 100vh;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.contenedor-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto;
+}
+.contenedor-titulo .titulo{
+    font-size: 55px;
+    margin: 20px auto;
+}
+.contenedor-titulo .nombre-challenge{
+    font-size: 30px;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formulario .texto{
+    width: 49%;
+    height: 300px;
+    min-height: 100px;
+    max-height: 300px;
+    border-radius: 3px;
+    border: 3px solid #FFB4B4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 50px 5px 50px;
+   
+}
+.formulario textarea:focus{
+    outline: none;
+    border: 4px solid #f7a0a0;
+}
+.contenedor .botones{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 30px;
+}
+.botones input{
+    padding: 20px;
+    width: 200px; 
+    border-radius: 40px;
+    margin: 15px;
+    cursor: pointer;
+    background-color: #FF597B;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.botones .btn-copiar{
+    background-color: #7572F4;
+}
+.botones input:hover{
+    background-color: #290FBA;
+}
+footer .contenedor{
+    margin: 10px auto 10px auto;
+    padding: 60px 0 50px 0;
+    text-align: center;
+}
+
+@media screen and  (max-width: 500px) { 
+    .contenedor-titulo .titulo{
+        font-size: 30px;
+    }
+    .contenedor-titulo .nombre-challenge{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .formulario{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .formulario .texto{
+        width: 100%;
+        height: 150px;
+        margin: 10px;
+    }
+    .botones{
+        margin: 30px auto;
+    }
+    .botones input{
+        width: 150px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    footer h3{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and  (max-width: 320px) {
+    .contenedor .botones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario .texto{
+        font-size: 15px;
+    }
+    .botones h3{
+        font-size: 10px;
+    }
+    footer .contenedor{
+        padding: 10px;
+    }
+}
+
+
